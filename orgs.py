@@ -15,7 +15,7 @@ def get_repositories(org_name):
             print("Repository name: ", repo['name'])
             print("Repository URL: ", repo['html_url'])
             print("Created at: ", repo['created_at'])
-            print("Updated at: ", repo['updated_at'])
+            print("Number of files: ", repo['size'])
             print("\n")
     else:
         logging.error(f'Error code: {response.status_code} Message: {response.text}')
